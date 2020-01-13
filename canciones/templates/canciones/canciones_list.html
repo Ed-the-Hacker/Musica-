@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Canciones</title>
+    </head>
+    <body>
+        <div class="page-header">
+            <h1><a href="/">Canciones</a></h1>
+        </div>
+        {% for cancion in canciones %}
+        <div>
+            <p>Autor: {{ cancion.Autor }}</p>
+            <p>Titulo: {{ cancion.Titulo }}</p>
+            <p>Fecha de Lanzamiento: {{ cancion.FechaLanzamiento }}</p>
+        </div>
+        {% endfor %}
+    </body>
+</html>
